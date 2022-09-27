@@ -10,24 +10,46 @@
 		769E0DA928E1D28500634697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E0DA828E1D28500634697 /* AppDelegate.swift */; };
 		769E0DAB28E1D28500634697 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E0DAA28E1D28500634697 /* SceneDelegate.swift */; };
 		769E0DAD28E1D28500634697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E0DAC28E1D28500634697 /* ViewController.swift */; };
-		769E0DB028E1D28500634697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769E0DAE28E1D28500634697 /* Main.storyboard */; };
 		769E0DB228E1D28600634697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769E0DB128E1D28600634697 /* Assets.xcassets */; };
 		769E0DB528E1D28600634697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769E0DB328E1D28600634697 /* LaunchScreen.storyboard */; };
+		769E0DC328E1DA0200634697 /* HackerNewsHomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E0DC228E1DA0200634697 /* HackerNewsHomeViewControllerTests.swift */; };
+		769E0DCA28E2769000634697 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E0DC928E2769000634697 /* HomeViewController.swift */; };
+		769E0DCC28E3130C00634697 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E0DCB28E3130C00634697 /* Article.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		769E0DC428E1DA0200634697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 769E0D9D28E1D28500634697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 769E0DA428E1D28500634697;
+			remoteInfo = HackerNews;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		769E0DA528E1D28500634697 /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769E0DA828E1D28500634697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		769E0DAA28E1D28500634697 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		769E0DAC28E1D28500634697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		769E0DAF28E1D28500634697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		769E0DB128E1D28600634697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		769E0DB428E1D28600634697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		769E0DB628E1D28600634697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		769E0DC028E1DA0200634697 /* HackerNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		769E0DC228E1DA0200634697 /* HackerNewsHomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsHomeViewControllerTests.swift; sourceTree = "<group>"; };
+		769E0DC928E2769000634697 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		769E0DCB28E3130C00634697 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		769E0DA228E1D28500634697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		769E0DBD28E1DA0200634697 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				769E0DA728E1D28500634697 /* HackerNews */,
+				769E0DC128E1DA0200634697 /* HackerNewsTests */,
 				769E0DA628E1D28500634697 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				769E0DA528E1D28500634697 /* HackerNews.app */,
+				769E0DC028E1DA0200634697 /* HackerNewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +80,24 @@
 		769E0DA728E1D28500634697 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				769E0DC928E2769000634697 /* HomeViewController.swift */,
 				769E0DA828E1D28500634697 /* AppDelegate.swift */,
 				769E0DAA28E1D28500634697 /* SceneDelegate.swift */,
 				769E0DAC28E1D28500634697 /* ViewController.swift */,
-				769E0DAE28E1D28500634697 /* Main.storyboard */,
 				769E0DB128E1D28600634697 /* Assets.xcassets */,
 				769E0DB328E1D28600634697 /* LaunchScreen.storyboard */,
 				769E0DB628E1D28600634697 /* Info.plist */,
+				769E0DCB28E3130C00634697 /* Article.swift */,
 			);
 			path = HackerNews;
+			sourceTree = "<group>";
+		};
+		769E0DC128E1DA0200634697 /* HackerNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				769E0DC228E1DA0200634697 /* HackerNewsHomeViewControllerTests.swift */,
+			);
+			path = HackerNewsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = 769E0DA528E1D28500634697 /* HackerNews.app */;
 			productType = "com.apple.product-type.application";
 		};
+		769E0DBF28E1DA0200634697 /* HackerNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 769E0DC628E1DA0200634697 /* Build configuration list for PBXNativeTarget "HackerNewsTests" */;
+			buildPhases = (
+				769E0DBC28E1DA0200634697 /* Sources */,
+				769E0DBD28E1DA0200634697 /* Frameworks */,
+				769E0DBE28E1DA0200634697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				769E0DC528E1DA0200634697 /* PBXTargetDependency */,
+			);
+			name = HackerNewsTests;
+			productName = HackerNewsTests;
+			productReference = 769E0DC028E1DA0200634697 /* HackerNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					769E0DA428E1D28500634697 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					769E0DBF28E1DA0200634697 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 769E0DA428E1D28500634697;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				769E0DA428E1D28500634697 /* HackerNews */,
+				769E0DBF28E1DA0200634697 /* HackerNewsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +183,13 @@
 			files = (
 				769E0DB528E1D28600634697 /* LaunchScreen.storyboard in Resources */,
 				769E0DB228E1D28600634697 /* Assets.xcassets in Resources */,
-				769E0DB028E1D28500634697 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		769E0DBE28E1DA0200634697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,20 +203,30 @@
 				769E0DAD28E1D28500634697 /* ViewController.swift in Sources */,
 				769E0DA928E1D28500634697 /* AppDelegate.swift in Sources */,
 				769E0DAB28E1D28500634697 /* SceneDelegate.swift in Sources */,
+				769E0DCA28E2769000634697 /* HomeViewController.swift in Sources */,
+				769E0DCC28E3130C00634697 /* Article.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		769E0DBC28E1DA0200634697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769E0DC328E1DA0200634697 /* HackerNewsHomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		769E0DAE28E1D28500634697 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				769E0DAF28E1D28500634697 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		769E0DC528E1DA0200634697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 769E0DA428E1D28500634697 /* HackerNews */;
+			targetProxy = 769E0DC428E1DA0200634697 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		769E0DB328E1D28600634697 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +364,6 @@
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +391,6 @@
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +403,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		769E0DC728E1DA0200634697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQ2F4V3MYD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeckfordAnthony.HackerNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNews.app/HackerNews";
+			};
+			name = Debug;
+		};
+		769E0DC828E1DA0200634697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQ2F4V3MYD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BeckfordAnthony.HackerNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNews.app/HackerNews";
 			};
 			name = Release;
 		};
@@ -353,6 +459,15 @@
 			buildConfigurations = (
 				769E0DBA28E1D28600634697 /* Debug */,
 				769E0DBB28E1D28600634697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		769E0DC628E1DA0200634697 /* Build configuration list for PBXNativeTarget "HackerNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769E0DC728E1DA0200634697 /* Debug */,
+				769E0DC828E1DA0200634697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
