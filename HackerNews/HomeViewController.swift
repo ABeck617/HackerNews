@@ -15,8 +15,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        title = "HackerNews"
+        view.backgroundColor = .systemBackground
        configureTable()
     }
     

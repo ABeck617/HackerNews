@@ -24,6 +24,25 @@ class HackerNewsHomeViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
+    
+    func test_didSetTitleForVC() {
+        // when
+        systemUnderTest.loadViewIfNeeded()
+        
+        // then
+        XCTAssertEqual(systemUnderTest.title, "HackerNews")
+    }
+    
+    
+    func test_didCongfigureTableViewDelegateAndDataSource() {
+        // when
+        systemUnderTest.loadViewIfNeeded()
+        // then
+        
+        XCTAssertNotNil(systemUnderTest.tableView.delegate)
+        XCTAssertNotNil(systemUnderTest.tableView.delegate)
+    }
+    
     // How to create your test
     
     func test_tableViewShouldBeEmpty() {
@@ -39,7 +58,7 @@ class HackerNewsHomeViewControllerTests: XCTestCase {
     
     func test_tableViewHasOneItem() {
        // when
-        systemUnderTest.articles = [Article()]
+        systemUnderTest.articles.append(Article())
         systemUnderTest.loadViewIfNeeded()
         
         
@@ -51,8 +70,14 @@ class HackerNewsHomeViewControllerTests: XCTestCase {
     
     
     func test_tableViewHasManyItems() {
-        //when
+       //given
         let articles = [Article(), Article(), Article(), Article()]
+        
+        
+        
+        
+        
+        //when
         systemUnderTest.articles = articles
         systemUnderTest.loadViewIfNeeded()
         
@@ -62,5 +87,4 @@ class HackerNewsHomeViewControllerTests: XCTestCase {
     }
 }
 
-struct Article {}
 
